@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 8px 50px ;
+  background-color: #ffffff; /* or your preferred background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.logo img {
+
+  margin-top: -49px;
+  margin-bottom: -49px;
+  height: 170px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo img:hover {
+  transform: scale(1.20);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 0 auto; /* center on page if needed */
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  min-width: 0;
+}
+
+.search-bar button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #333;
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* space between login and cart */
+}
+
+.login, .cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 23px;
+  color: #333;
+  cursor: pointer;
 }
