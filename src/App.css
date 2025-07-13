@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed;
+  
   top: 0;
   left: 0;
   right: 0;
@@ -24,7 +24,7 @@
 }
 
 .logo img:hover {
-  transform: scale(1.20);
+  transform: scale(1.10);
 }
 .search-bar {
   display: flex;
@@ -51,7 +51,8 @@
 .search-bar button {
   background-color: #000;
   color: #fff;
-  padding: 10px 20px;
+height: 30px;
+  padding: 0px 20px;
   border-radius: 50px;
   border: none;
   font-size: 14px;
@@ -78,6 +79,9 @@
 }
 .humbur {
   display: none;  
+}
+.menu-web{
+  display: none;
 }
 @media screen and (max-width: 920px) {
 .navbar{
@@ -110,6 +114,43 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .menu-web {
+    display: none;
+  }
+    .menu-mobile {
+    position: absolute;
+    top: 3.6rem;
+    text-align: center;
+    background-color: #ffffff; /* light blue background */
+    width: 45%;
+    right: 0px;
+    cursor: pointer;
+    line-height: 1.9;
+    box-shadow: rgba(0,0,0,0.25) 0px 14px 28px;
+  }
+  .menu-mobile ul {
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+li a {
+  text-decoration: none;  /* Removes underline */
+  color: black;           /* Changes text color */
+       /* Optional: make it medium-bold */
+}
+summary {
+  font-weight: bold;
+  color: #000;     /* optional */
+}
+
+
+li a:hover {
+  color: #007bff;         /* Optional: color on hover */
+}
+  
+
   .search-bar {
     display: none;
   }
@@ -124,4 +165,26 @@
 .humbur {
   display: inline-block;  
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  display: flex;
 }
