@@ -7,15 +7,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 50px ;
+  padding: 0px 50px ;
   background-color: #ffffff; /* or your preferred background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
 
-  margin-top: -49px;
-  margin-bottom: -49px;
+  margin-top: -55px;
+  margin-bottom: -55px;
   height: 170px;
   width: auto;
   object-fit: contain;
@@ -72,7 +72,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 23px;
+  font-size: 21px;
   color: #333;
   cursor: pointer;
 }
