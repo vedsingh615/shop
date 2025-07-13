@@ -1,4 +1,9 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +28,7 @@
 }
 .search-bar {
   display: flex;
+  height: 35px;
   align-items: center;
   max-width: 450px;
   width: 100%;
@@ -46,9 +52,9 @@
   background-color: #000;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 50px;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -69,4 +75,53 @@
   font-size: 23px;
   color: #333;
   cursor: pointer;
+}
+.humbur {
+  display: none;  
+}
+@media screen and (max-width: 920px) {
+.navbar{
+  padding: 8px 10px ;
+}
+}
+@media screen and (max-width: 843px) {
+.logo img{
+  height: 120px;
+  width: auto;
+}
+.nav-icons {
+  gap: 10px; 
+
+}
+
+.login, .cart {
+
+  font-size: 18px;
+ 
+}
+.search-bar{
+  max-width: 300px;
+  width: 100%;
+}
+}
+@media screen and (max-width: 600px) {
+  .search-bar {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .search-bar {
+    display: none;
+  }
+  .login, .cart {
+  font-size: 12px;
+   font-weight: bold;
+}
+.person-circle, .cart4 {
+  width: 20px;
+  height: 20px;
+}
+.humbur {
+  display: inline-block;  
+}
 }
