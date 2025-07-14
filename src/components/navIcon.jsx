@@ -3,7 +3,7 @@ import React from 'react'
 function NavIcon() {
   return (
     <div className='App'>
-<div className="grid-container">
+<div className="grid-container" style={{width:'90%',left:'80px'}}>
    <div className="grid-item">
       <img src='https://img.freepik.com/premium-photo/dslr-camera-with-flash_144962-4377.jpg?w=826' style={{height:"80px",width:"70px",mixBlendMode:"multiply"}} alt='cam'/>
       <p>Camera</p>
