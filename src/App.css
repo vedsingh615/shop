@@ -217,6 +217,7 @@ left: 6%;
   text-align: center;
   padding: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 /*practice*/
 
@@ -230,9 +231,13 @@ left: 6%;
 
 @media (max-width: 1200px) and (min-width: 768px) {
   .grid-container {
- grid-template-columns: repeat(5, 1fr);
+ grid-template-columns: repeat(6, 1fr);
  top: 0px;
  left: 40px !important;
+     overflow: hidden; 
+  }
+    .grid-item:nth-child(n+7) {
+    display: none; /* Hides items 6 to 10 */
   }
   .slide{
     top: 10px;
