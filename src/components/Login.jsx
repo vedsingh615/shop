@@ -1,6 +1,5 @@
-/*
+
 import React from 'react';
-import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Login = () => {
@@ -21,11 +20,11 @@ const Login = () => {
         <button type="submit">Login</button>
 
         <p className="register-text">
-          Don't have an account? <Link to="/Register">Register</Link>
+          Don't have an account? <a href="/Register">Register</a>
         </p>
       </form>
     </div>
   );
 };
 
-export default Login;*/
+export default Login;

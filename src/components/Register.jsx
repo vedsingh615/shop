@@ -1,6 +1,5 @@
-/*
+
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
@@ -20,11 +19,11 @@ const Register = () => {
         <button type="submit">Sign Up</button>
 
         <p className="register-text">
-          Already have an account? <Link to="/Login">Login</Link>
+          Already have an account? <a href="/Login">Login</a>
         </p>
       </form>
     </div>
   );
 };
 
-export default Register;*/
+export default Register;
