@@ -1,27 +1,31 @@
-
 import React from 'react';
 
 const Register = () => {
   return (
-    <div className="login-container">
-      <form className="login-form">
-        <h2 className="login-heading">Create a YoungFashion Account</h2>
-
-        <label htmlFor="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required />
-
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required />
-
-        <label htmlFor="password">Password</label>
-        <input type="password" id="password" placeholder="Create a password" required />
-
-        <button type="submit">Sign Up</button>
-
-        <p className="register-text">
-          Already have an account? <a href="/Login">Login</a>
-        </p>
-      </form>
+    <div className="register-container">
+      <div className="register-box">
+        <h2 className="logo2">YoungFashion</h2>
+        <form>
+          <div className="input-group">
+            <input type="text" required />
+            <label>Full Name</label>
+          </div>
+          <div className="input-group">
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div className="input-group">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div className="input-group">
+            <input type="password" required />
+            <label>Confirm Password</label>
+          </div>
+          <button type="submit" className="register-btn">Register</button>
+          <p className="login-link">Already have an account? <a href="/login">Login</a></p>
+        </form>
+      </div>
     </div>
   );
 };

@@ -8,15 +8,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px ;
+  padding: 15px 40px ;
   background-color: #ffffff; /* or your preferred background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  margin-top: -55px;
-  margin-bottom: -55px;
-  height: 170px;
+  height: 35px;
   width: auto;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -85,15 +83,11 @@ height: 30px;
 .menu-web{
   display: none;
 }
-@media screen and (max-width: 920px) {
+
+
+@media screen and (max-width: 880px) {
 .navbar {
-  padding: 0px 5px;
-}}
-@media screen and (max-width: 843px) {
-.logo img{
-  height: 120px;
-  margin-bottom: -95px;
-  width: auto;
+  padding: 15px 8px; /* Adjust padding for smaller screens */
 }
 .nav-icons {
   gap: 10px; 
@@ -110,12 +104,12 @@ height: 30px;
   width: 100%;
 }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 627px) {
   .search-bar {
     max-width: 200px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
   .menu-web {
     display: none;
   }
@@ -191,10 +185,11 @@ li a:hover {
 
 /* carosl*/
 .slide{
-  top: 8px;
+  top: 15px;
   overflow: hidden;
-  width: 90vw;
-left: 6%;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 .slide img {
   width: 100%;
@@ -203,7 +198,7 @@ left: 6%;
 /*nav-icon*/
 .grid-container {
   position: relative;
-  top: 0px;
+  top: 10px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 10px;
@@ -215,7 +210,7 @@ left: 6%;
 .grid-item {
   background-color: white;
   text-align: center;
-  padding: 20px;
+ 
   border-radius: 5px;
   cursor: pointer;
 }
@@ -276,6 +271,9 @@ left: 6%;
     height: 25vh !important;
   }
 }
+/* all icons navbar is over there */
+
+
 
 
 
@@ -298,89 +296,220 @@ left: 6%;
 
 .login-container {
   height: 100vh;
-  width: 100vw;
-  background-color: #f5f7fa;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  font-family: 'Poppins', sans-serif;
 }
 
-.login-form {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+.login-box {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 400px;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.logol {
   text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #af4261;
+  margin-bottom: 2rem;
 }
 
-.logo-wrapper {
-  margin-bottom: 30px;
+.input-group {
+  position: relative;
+  margin-bottom: 1.8rem;
 }
 
-.logo {
-  height: 60px;
-  margin-bottom: 10px;
-}
-
-.login-heading {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.login-form label {
-  display: block;
-  margin-bottom: 6px;
-  text-align: left;
-  color: #444;
-  font-size: 14px;
-}
-
-.login-form input {
+.input-group input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
+  padding: 12px 10px;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 14px;
-}
-
-.login-form input:focus {
-  border-color: #007bff;
   outline: none;
+  background: transparent;
+  transition: 0.3s ease;
 }
 
-.login-form button {
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #999;
+  transition: 0.3s ease;
+  pointer-events: none;
+  background: white;
+  padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 0.75rem;
+  color: #af4261;
+}
+
+.login-btn {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
+  background: #af4261;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  color: white;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.login-form button:hover {
-  background-color: #0056b3;
+.login-btn:hover {
+  background: #90234c;
+  transform: scale(1.03);
 }
 
-.register-text {
-  margin-top: 16px;
-  font-size: 14px;
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
-.register-text a {
-  color: #007bff;
+.register-link a {
+  color: #af4261;
   text-decoration: none;
+  font-weight: 500;
 }
 
-.register-text a:hover {
+.register-link a:hover {
   text-decoration: underline;
 }
 
+
+
+
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  padding: 1rem;
+}
+
+.register-box {
+  background: #fff;
+  padding: 1.5rem 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 320px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #af4261;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 0.8rem;
+  background: white;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -7px;
+  left: 8px;
+  font-size: 0.65rem;
+  color: #af4261;
+}
+
+.register-btn {
+  padding: 10px;
+  background: #af4261;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.register-btn:hover {
+  background: #90234c;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.login-link a {
+  color: #af4261;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

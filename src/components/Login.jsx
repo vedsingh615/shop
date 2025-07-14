@@ -1,28 +1,23 @@
-
 import React from 'react';
-import logo from '../assets/logo.png';
 
 const Login = () => {
   return (
     <div className="login-container">
-      <form className="login-form">
-        <div className="logo-wrapper">
-          <img src={logo} alt="YoungFashion Logo" className="logo" />
-          <h2 className="login-heading">Login to YoungFashion</h2>
-        </div>
-
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required />
-
-        <label htmlFor="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password" required />
-
-        <button type="submit">Login</button>
-
-        <p className="register-text">
-          Don't have an account? <a href="/Register">Register</a>
-        </p>
-      </form>
+      <div className="login-box">
+        <h2 className="logol">YoungFashion</h2>
+        <form>
+          <div className="input-group">
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div className="input-group">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <button type="submit" className="login-btn">Login</button>
+          <p className="register-link">Don’t have an account? <a href="/register">Register</a></p>
+        </form>
+      </div>
     </div>
   );
 };
