@@ -1,5 +1,6 @@
 .navbar {
   position: sticky;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
@@ -85,13 +86,13 @@ height: 30px;
   display: none;
 }
 @media screen and (max-width: 920px) {
-.navbar{
-  padding: 8px 10px ;
-}
-}
+.navbar {
+  padding: 0px 5px;
+}}
 @media screen and (max-width: 843px) {
 .logo img{
   height: 120px;
+  margin-bottom: -95px;
   width: auto;
 }
 .nav-icons {
@@ -120,7 +121,7 @@ height: 30px;
   }
     .menu-mobile {
     position: absolute;
-    top: 3.6rem;
+    top: 4.38rem;
     text-align: center;
     background-color: #ffffff; /* light blue background */
     width: 45%;
@@ -190,6 +191,7 @@ li a:hover {
 
 /* carosl*/
 .slide{
+  top: 8px;
   overflow: hidden;
   width: 90vw;
 left: 6%;
