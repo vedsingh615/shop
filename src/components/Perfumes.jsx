@@ -1,47 +1,47 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const Cargos = () => {
-  const CargosImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlF-jGp3vAZGpvNq8RC_dEA_jj7ccSei5Daw&s";
+const Perfumes = () => {
+  const PerfumesImage = "https://img.freepik.com/premium-psd/perfume-bottle-sand_23-2148961294.jpg?w=740";
 
   const tshirtProducts = [
     {
-      image: CargosImage,
+      image: PerfumesImage,
       title: 'Black Graphic Tee',
       category: 'T-Shirts',
       price: 799,
       href: '/product/tshirt-black',
     },
     {
-      image: CargosImage,
+      image: PerfumesImage,
       title: 'Marvel Logo Tee',
       category: 'T-Shirts',
       price: 899,
       href: '/product/tshirt-marvel',
     },
     {
-      image: CargosImage,
+      image: PerfumesImage,
       title: 'Minimal White Tee',
       category: 'T-Shirts',
       price: 699,
       href: '/product/tshirt-white',
     },
     {
-      image: CargosImage,
+      image: PerfumesImage,
       title: 'Anime Print Oversized Tee',
       category: 'T-Shirts',
       price: 999,
       href: '/product/tshirt-anime',
     },
     {
-      image: CargosImage,
+      image: PerfumesImage,
       title: 'Classic Navy T-Shirt',
       category: 'T-Shirts',
       price: 749,
       href: '/product/tshirt-navy',
     },
     {
-      image: CargosImage,
+      image: PerfumesImage,
       title: 'Slogan Printed Tee',
       category: 'T-Shirts',
       price: 899,
@@ -58,4 +58,4 @@ const Cargos = () => {
   );
 };
 
-export default Cargos;
+export default Perfumes;

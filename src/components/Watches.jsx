@@ -1,47 +1,47 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const Cargos = () => {
-  const CargosImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlF-jGp3vAZGpvNq8RC_dEA_jj7ccSei5Daw&s";
+const Watches = () => {
+  const WatchesImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-TbYx7SsnOvRIOMGuSXVvWCb2yghUwFc6tNWvjdTKrsGzg2Kkl3KZPTvbDq4B8iEvAcc&usqp=CAU";
 
   const tshirtProducts = [
     {
-      image: CargosImage,
+      image: WatchesImage,
       title: 'Black Graphic Tee',
       category: 'T-Shirts',
       price: 799,
       href: '/product/tshirt-black',
     },
     {
-      image: CargosImage,
+      image: WatchesImage,
       title: 'Marvel Logo Tee',
       category: 'T-Shirts',
       price: 899,
       href: '/product/tshirt-marvel',
     },
     {
-      image: CargosImage,
+      image: WatchesImage,
       title: 'Minimal White Tee',
       category: 'T-Shirts',
       price: 699,
       href: '/product/tshirt-white',
     },
     {
-      image: CargosImage,
+      image: WatchesImage,
       title: 'Anime Print Oversized Tee',
       category: 'T-Shirts',
       price: 999,
       href: '/product/tshirt-anime',
     },
     {
-      image: CargosImage,
+      image: WatchesImage,
       title: 'Classic Navy T-Shirt',
       category: 'T-Shirts',
       price: 749,
       href: '/product/tshirt-navy',
     },
     {
-      image: CargosImage,
+      image: WatchesImage,
       title: 'Slogan Printed Tee',
       category: 'T-Shirts',
       price: 899,
@@ -58,4 +58,4 @@ const Cargos = () => {
   );
 };
 
-export default Cargos;
+export default Watches;

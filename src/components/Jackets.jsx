@@ -2,7 +2,7 @@ import React from 'react';
 import ProductCard from './ProductCard';
 
 const Jackets = () => {
-  const JacketImage = "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1751994388_9774808.jpg?v=2";
+  const JacketImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgupZrmPLHgzyzUFJF6__fqHepV_TX-_1NxEQ7s3h-Ys2KHn9uMpM8IPJf7o98ZEIXUw&usqp=CAU";
 
   const tshirtProducts = [
     {

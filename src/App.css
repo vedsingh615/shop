@@ -209,7 +209,8 @@ li a:hover {
 .grid-item {
   background-color: white;
   text-align: center;
- 
+  text-decoration: none;
+  color: black;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -572,7 +573,6 @@ form {
 
 .wishlist-btn {
   position: absolute;
-  top: -3px;
   right: 6px;
   background: transparent;
   border: none;

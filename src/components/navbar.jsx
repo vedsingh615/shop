@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src={logo} alt="logo" />
-      </div>
+      </Link>
 
       <div className="search-bar">
         <input type="text" placeholder="Search products..." />
