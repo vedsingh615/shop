@@ -5,13 +5,14 @@ import Navbar from './components/navbar';
 import NavIcon from './components/navIcon';
 import Login from './components/Login';
 import Register from './components/Register';
+import Productlist from './components/Productlist';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 const App = () => {
 
 const router = createBrowserRouter([
-  { path: '/', element: <>   <Navbar />  <NavIcon/><Hero /> </>},
+  { path: '/', element: <>   <Navbar />  <NavIcon/><Hero /> <Productlist/></>},
   {path: '/Login', element: <>  <Login /> </>},
   {path: '/Register', element:<>   <Register /> </>},
 ]);
