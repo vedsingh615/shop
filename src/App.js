@@ -24,7 +24,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const App = () => {
 
 const router = createBrowserRouter([
-  { path: '/', element: <>   <Navbar />  <NavIcon/><Hero /> <Productlist/></>},
+  { path: '/', element: <>   <Navbar />  <NavIcon/><Hero /> <Productlist/> <Footer /></>},
   {path: '/Login', element: <>  <Navbar /> <Login /> </>},
   {path: '/Register', element:<>  <Navbar />  <Register /> </>},
   {path: '/tshirts', element: <> <Navbar /> <NavIcon/> <Tshirt /> </>},
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
     <div>
   
      <RouterProvider router={router}/>
-     <Footer />
+     
     </div>
   )
 }
