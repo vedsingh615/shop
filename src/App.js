@@ -16,6 +16,7 @@ import Bagpacks from './components/Bagpacks';
 import Jeans from './components/Jeans'; 
 import Perfumes from './components/Perfumes';
 import Watches from './components/Watches';
+import Footer from './components/Footer';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
     <div>
   
      <RouterProvider router={router}/>
+     <Footer />
     </div>
   )
 }

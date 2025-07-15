@@ -618,3 +618,182 @@ form {
   padding: 10px;
   gap: 8px;
 }
+
+/* all cards are over there  */
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #1e1b2e; /* deep navy/purple */
+  color: #f3f3f3;
+  padding: 40px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #e91e63; /* pink accent */
+}
+
+.footer-socials a {
+  color: #bbb;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #e91e63; /* pink accent */
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .payment-icons{
+    justify-content: center;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    
+    margin:  -40px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+.footer-section p {
+  color: #111;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  margin: 0;
+}
+.footer-section {
+  flex: 1 1 50px;
+  margin: 20px;
+  min-width: 0; /* prevent overflow in flex container */
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  color: #bbb;
+  margin-top: 10px;
+}
+
+.payment-icons svg:hover {
+  color: #e91e63;
+}
+
+.back-to-top {
+  margin-top: 15px;
+  background: none;
+  border: none;
+  color: #e91e63;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s ease;
+}
+
+.back-to-top:hover {
+  color: #040404;
+}
+.footer {
+  background: #f2f2f2;              /* Light gray background */
+  color: #111;                      /* Dark text */
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #e40046;                   /* Section titles in red */
+}
+
+.footer-section p,
+.footer-section ul li a {
+  color: #111;
+}
+
+.footer-section ul li a:hover {
+  color: #e40046;                   /* Hover in red */
+}
+
+.footer-socials a {
+  color: #888;                      /* Default gray */
+}
+
+.footer-socials a:hover {
+  color: #e40046;                   /* Hover effect */
+}
+
+.payment-icons svg {
+  color: inherit;                   /* Keep real icon color set inline */
+}
+
+.footer-bottom {
+  color: #444;                      /* Slightly muted black */
+  border-top: 1px solid #ccc;
+}
