@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo.png'; 
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showmenu, setshowMenu] = React.useState(false);
@@ -49,9 +50,11 @@ const Navbar = () => {
               <details>
                 <summary>All Accessories</summary>
                 <ul>
+                    <li><a href="/shoes">Shoes</a></li>
                   <li><a href="/backpacks">Backpacks</a></li>
                   <li><a href="/perfumes">Perfumes</a></li>
-                  <li><a href="/clips">Clips</a></li>
+                  <li><Link to="/caps">Caps</Link></li>
+                  <li><a href="/watches">Watches</a></li>
                 </ul>
               </details>
             </li>
@@ -59,10 +62,9 @@ const Navbar = () => {
               <details>
                 <summary>Top Wear</summary>
                 <ul>
-                  <li><a href="/tshirts">T-Shirts</a></li>
+                  <li><Link to="/tshirts">T-Shirts</Link></li>
                   <li><a href="/shirts">Shirts</a></li>
-                  <li><a href="/polos">Polos</a></li>
-                  <li><a href="/hoodies-jackets">Hoodies & Jackets</a></li>
+                  <li><a href="/jackets">Hoodies & Jackets</a></li>
                 </ul>
               </details>
             </li>
@@ -72,7 +74,6 @@ const Navbar = () => {
                 <ul>
                   <li><a href="/cargos">Cargos</a></li>
                   <li><a href="/jeans">Jeans</a></li>
-                  <li><a href="/shorts">Shorts</a></li>
                 </ul>
               </details>
             </li>

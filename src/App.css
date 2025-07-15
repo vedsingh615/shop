@@ -187,7 +187,6 @@ li a:hover {
 .slide{
   top: 15px;
   overflow: hidden;
-  width: 100vw;
   align-items: center;
   justify-content: center;
 }
