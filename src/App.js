@@ -25,18 +25,18 @@ const App = () => {
 
 const router = createBrowserRouter([
   { path: '/', element: <>   <Navbar />  <NavIcon/><Hero /> <Productlist/> <Footer /></>},
-  {path: '/Login', element: <>  <Navbar /> <Login /> </>},
-  {path: '/Register', element:<>  <Navbar />  <Register /> </>},
-  {path: '/tshirts', element: <> <Navbar /> <NavIcon/> <Tshirt /> </>},
-  {path: '/caps', element: <> <Navbar /> <NavIcon/> < Caps/> </>},
-  {path: '/jackets', element: <> <Navbar /> <NavIcon/> <Jackets /> </>},
-  {path: '/cargos', element: <> <Navbar /> <NavIcon/> <Cargos /> </>},
-  {path: '/shirts', element: <> <Navbar /> <NavIcon/> <Shirts /> </>},
-  {path: '/shoes', element: <> <Navbar /> <NavIcon/> <Shoes /> </>},
-  {path: '/bagpacks', element: <> <Navbar /> <NavIcon/> <Bagpacks /> </>},
-  {path: '/jeans', element: <> <Navbar /> <NavIcon/> <Jeans /> </>},
-  {path: '/perfumes', element: <> <Navbar /> <NavIcon/> <Perfumes /> </>},
-  {path: '/watches', element: <> <Navbar /> <NavIcon/> <Watches /> </>},
+  {path: '/Login', element: <>  <Navbar /> <Login /> <Footer /></>},
+  {path: '/Register', element:<>  <Navbar />  <Register /> <Footer /></>},
+  {path: '/tshirts', element: <> <Navbar /> <NavIcon/> <Tshirt /><Footer /> </>},
+  {path: '/caps', element: <> <Navbar /> <NavIcon/> < Caps/> <Footer /></>},
+  {path: '/jackets', element: <> <Navbar /> <NavIcon/> <Jackets /> <Footer /></>},
+  {path: '/cargos', element: <> <Navbar /> <NavIcon/> <Cargos /> <Footer /></>},
+  {path: '/shirts', element: <> <Navbar /> <NavIcon/> <Shirts /> <Footer /> </>},
+  {path: '/shoes', element: <> <Navbar /> <NavIcon/> <Shoes /> <Footer /> </>},
+  {path: '/bagpacks', element: <> <Navbar /> <NavIcon/> <Bagpacks /> <Footer /> </>},
+  {path: '/jeans', element: <> <Navbar /> <NavIcon/> <Jeans /> <Footer /> </>},
+  {path: '/perfumes', element: <> <Navbar /> <NavIcon/> <Perfumes /> <Footer /></>},
+  {path: '/watches', element: <> <Navbar /> <NavIcon/> <Watches /> <Footer /></>},
 ]);
 
 

@@ -47,6 +47,35 @@ const Watches = () => {
       price: 899,
       href: '/product/tshirt-slogan',
     },
+    
+    {
+      image: WatchesImage,
+      title: 'Minimal White Tee',
+      category: 'T-Shirts',
+      price: 699,
+      href: '/product/tshirt-white',
+    },
+    {
+      image: WatchesImage,
+      title: 'Anime Print Oversized Tee',
+      category: 'T-Shirts',
+      price: 999,
+      href: '/product/tshirt-anime',
+    },
+    {
+      image: WatchesImage,
+      title: 'Classic Navy T-Shirt',
+      category: 'T-Shirts',
+      price: 749,
+      href: '/product/tshirt-navy',
+    },
+    {
+      image: WatchesImage,
+      title: 'Slogan Printed Tee',
+      category: 'T-Shirts',
+      price: 899,
+      href: '/product/tshirt-slogan',
+    },
   ];
 
   return (

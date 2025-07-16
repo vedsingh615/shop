@@ -47,6 +47,35 @@ const Shoes = () => {
       price: 899,
       href: '/product/tshirt-slogan',
     },
+    
+    {
+      image: ShoesImage,
+      title: 'Minimal White Tee',
+      category: 'T-Shirts',
+      price: 699,
+      href: '/product/tshirt-white',
+    },
+    {
+      image: ShoesImage,
+      title: 'Anime Print Oversized Tee',
+      category: 'T-Shirts',
+      price: 999,
+      href: '/product/tshirt-anime',
+    },
+    {
+      image: ShoesImage,
+      title: 'Classic Navy T-Shirt',
+      category: 'T-Shirts',
+      price: 749,
+      href: '/product/tshirt-navy',
+    },
+    {
+      image: ShoesImage,
+      title: 'Slogan Printed Tee',
+      category: 'T-Shirts',
+      price: 899,
+      href: '/product/tshirt-slogan',
+    },
   ];
 
   return (
