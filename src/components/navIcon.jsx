@@ -22,7 +22,7 @@ function NavIcon() {
       <p>Shoes</p>
     </div> <div className="grid-item">
       <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlF-jGp3vAZGpvNq8RC_dEA_jj7ccSei5Daw&s' style={{height:"80px",width:"70px",mixBlendMode:"multiply"}} alt='cam'/>
-      <p>Cargos</p>
+      <p>Cargo</p>
     </div>
       <div className="grid-item">
       <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgupZrmPLHgzyzUFJF6__fqHepV_TX-_1NxEQ7s3h-Ys2KHn9uMpM8IPJf7o98ZEIXUw&usqp=CAU' style={{height:"80px",width:"70px",mixBlendMode:"multiply"}} alt='cam'/>
