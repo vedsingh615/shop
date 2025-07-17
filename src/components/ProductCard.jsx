@@ -12,7 +12,7 @@ const ProductCard = ({ image, title, category, price, href }) => {
     <a href={href} className="product-card-link">
       <div className="product-card">
         <div className="image-container">
-          <img src={image} alt={title} />
+          <img src={image} alt={title} style={{objectFit:'fill'}} />
           <button
             className={`wishlist-btn ${wishlisted ? 'active' : ''}`}
             onClick={toggleWishlist}

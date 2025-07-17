@@ -2,85 +2,82 @@ import React from 'react';
 import ProductCard from './ProductCard';
 
 const Perfumes = () => {
-  const PerfumesImage = "https://img.freepik.com/premium-psd/perfume-bottle-sand_23-2148961294.jpg?w=740";
-
-  const tshirtProducts = [
+  const perfumeProducts = [
     {
-      image: PerfumesImage,
-      title: 'Black Graphic Tee',
-      category: 'T-Shirts',
-      price: 799,
-      href: '/product/tshirt-black',
+      image: 'https://m.media-amazon.com/images/I/61I7wRX3rFL._AC_UL320_.jpg',
+      title: 'Versace Bright Crystal',
+      category: 'Perfume',
+      price: 4999,
+      href: '/product/versace-bright-crystal',
     },
     {
-      image: PerfumesImage,
-      title: 'Marvel Logo Tee',
-      category: 'T-Shirts',
-      price: 899,
-      href: '/product/tshirt-marvel',
-    },
-    
-    {
-      image: PerfumesImage,
-      title: 'Minimal White Tee',
-      category: 'T-Shirts',
-      price: 699,
-      href: '/product/tshirt-white',
+      image: 'https://m.media-amazon.com/images/I/71lLdu3wkPL._AC_UL320_.jpg',
+      title: 'Bleu De Chanel',
+      category: 'Perfume',
+      price: 5999,
+      href: '/product/bleu-de-chanel',
     },
     {
-      image: PerfumesImage,
-      title: 'Anime Print Oversized Tee',
-      category: 'T-Shirts',
-      price: 999,
-      href: '/product/tshirt-anime',
+      image: 'https://m.media-amazon.com/images/I/711eP6dPXeL._AC_UL320_.jpg',
+      title: 'Dior Sauvage',
+      category: 'Perfume',
+      price: 6299,
+      href: '/product/dior-sauvage',
     },
     {
-      image: PerfumesImage,
-      title: 'Classic Navy T-Shirt',
-      category: 'T-Shirts',
-      price: 749,
-      href: '/product/tshirt-navy',
+      image: 'https://m.media-amazon.com/images/I/511CYaqTA4L._AC_UL320_.jpg',
+      title: 'Gucci Bloom',
+      category: 'Perfume',
+      price: 4899,
+      href: '/product/gucci-bloom',
     },
     {
-      image: PerfumesImage,
-      title: 'Slogan Printed Tee',
-      category: 'T-Shirts',
-      price: 899,
-      href: '/product/tshirt-slogan',
+      image: 'https://m.media-amazon.com/images/I/61nkCltKCaL._AC_UL320_.jpg',
+      title: 'Armani Code',
+      category: 'Perfume',
+      price: 5499,
+      href: '/product/armani-code',
     },
     {
-      image: PerfumesImage,
-      title: 'Minimal White Tee',
-      category: 'T-Shirts',
-      price: 699,
-      href: '/product/tshirt-white',
+      image: 'https://m.media-amazon.com/images/I/61fLAHtUMrL._AC_UL320_.jpg',
+      title: 'Tom Ford Noir',
+      category: 'Perfume',
+      price: 6999,
+      href: '/product/tom-ford-noir',
     },
     {
-      image: PerfumesImage,
-      title: 'Anime Print Oversized Tee',
-      category: 'T-Shirts',
-      price: 999,
-      href: '/product/tshirt-anime',
+      image: 'https://m.media-amazon.com/images/I/61Ny3IO763L._AC_UL320_.jpg',
+      title: 'Carolina Herrera 212',
+      category: 'Perfume',
+      price: 4799,
+      href: '/product/carolina-212',
     },
     {
-      image: PerfumesImage,
-      title: 'Classic Navy T-Shirt',
-      category: 'T-Shirts',
-      price: 749,
-      href: '/product/tshirt-navy',
+      image: 'https://m.media-amazon.com/images/I/51soMCNMKIL._AC_UL320_.jpg',
+      title: 'Victoria Secret Bombshell',
+      category: 'Perfume',
+      price: 4499,
+      href: '/product/victoria-bombshell',
     },
     {
-      image: PerfumesImage,
-      title: 'Slogan Printed Tee',
-      category: 'T-Shirts',
-      price: 899,
-      href: '/product/tshirt-slogan',
+      image: 'https://m.media-amazon.com/images/I/51iomPcaZ9L._AC_UL320_.jpg',
+      title: 'Calvin Klein One',
+      category: 'Perfume',
+      price: 2899,
+      href: '/product/ck-one',
+    },
+    {
+      image: 'https://m.media-amazon.com/images/I/41-TSee7UJL._AC_UL320_.jpg',
+      title: 'Fogg Xtremo',
+      category: 'Perfume',
+      price: 399,
+      href: '/product/fogg-xtremo',
     },
   ];
 
   return (
     <div className="products-grid">
-      {tshirtProducts.map((product, index) => (
+      {perfumeProducts.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}
     </div>
