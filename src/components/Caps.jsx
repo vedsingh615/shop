@@ -4,7 +4,7 @@ import ProductCard from './ProductCard';
 const Caps = () => {
  
 
-  const tshirtProducts = [
+  const capsProducts = [
     {
      image:'https://m.media-amazon.com/images/I/51oOIT6wAfL._AC_UL320_.jpg',
       title: 'Black Graphic Tee',
@@ -79,7 +79,7 @@ const Caps = () => {
 
   return (
     <div className="products-grid">
-      {tshirtProducts.map((product, index) => (
+      {capsProducts.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}
     </div>
