@@ -2,46 +2,45 @@ import React from 'react';
 import ProductCard from './ProductCard';
 
 const Watches = () => {
-  const WatchesImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-TbYx7SsnOvRIOMGuSXVvWCb2yghUwFc6tNWvjdTKrsGzg2Kkl3KZPTvbDq4B8iEvAcc&usqp=CAU";
 
   const tshirtProducts = [
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/41mhIJKHKXL._AC_UL320_.jpg',
       title: 'Black Graphic Tee',
       category: 'T-Shirts',
       price: 799,
       href: '/product/tshirt-black',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/51G68yViXHL._AC_UL320_.jpg',
       title: 'Marvel Logo Tee',
       category: 'T-Shirts',
       price: 899,
       href: '/product/tshirt-marvel',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/61V9NlP5unL._AC_UL320_.jpg',
       title: 'Minimal White Tee',
       category: 'T-Shirts',
       price: 699,
       href: '/product/tshirt-white',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/61xSTnSOkuL._AC_UL320_.jpg',
       title: 'Anime Print Oversized Tee',
       category: 'T-Shirts',
       price: 999,
       href: '/product/tshirt-anime',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/612XCKPG0TL._AC_UL320_.jpg',
       title: 'Classic Navy T-Shirt',
       category: 'T-Shirts',
       price: 749,
       href: '/product/tshirt-navy',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/71-yaJc6Z-L._AC_UL320_.jpg',
       title: 'Slogan Printed Tee',
       category: 'T-Shirts',
       price: 899,
@@ -49,28 +48,28 @@ const Watches = () => {
     },
     
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/71v6m3wsYRL._AC_UL320_.jpg',
       title: 'Minimal White Tee',
       category: 'T-Shirts',
       price: 699,
       href: '/product/tshirt-white',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/61dywKQasaL._AC_UL320_.jpg',
       title: 'Anime Print Oversized Tee',
       category: 'T-Shirts',
       price: 999,
       href: '/product/tshirt-anime',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/711c+bKUNAL._AC_UL320_.jpg',
       title: 'Classic Navy T-Shirt',
       category: 'T-Shirts',
       price: 749,
       href: '/product/tshirt-navy',
     },
     {
-      image: WatchesImage,
+      image:'https://m.media-amazon.com/images/I/61uysU9crTL._AC_UL320_.jpg',
       title: 'Slogan Printed Tee',
       category: 'T-Shirts',
       price: 899,
