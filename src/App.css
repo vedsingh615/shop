@@ -797,3 +797,56 @@ form {
   color: #444;                      /* Slightly muted black */
   border-top: 1px solid #ccc;
 }
+/*grid of productlist */
+.uniform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180, 1fr));
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .uniform-grid {
+    grid-template-columns: repeat(2, 1fr); /* ≥600px: 2 columns */
+    column-gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .uniform-grid {
+    grid-template-columns: repeat(3, 1fr); /* ≥768px: 3 columns */
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .uniform-grid {
+    grid-template-columns: repeat(4, 1fr); /* ≥1024px: 4 columns */
+    column-gap: 24px;
+  }
+}
+
+.grid-items {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.grid-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.grid-caption {
+  margin-top: 8px;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}

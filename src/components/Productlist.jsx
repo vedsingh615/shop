@@ -1,75 +1,77 @@
 import React from 'react';
-import ProductCard from './ProductCard';
 
 
- const tshirtProducts = [
-    {
-      image:'https://m.media-amazon.com/images/I/61CGqRScDaL._AC_UL320_.jpg',
-      title: 'Black Graphic Tee',
-      category: 'T-Shirts',
-      price: 799,
-      href: '/product/tshirt-black',
-    },
-    {
-      image:'https://m.media-amazon.com/images/I/61Oqvx88hhL._AC_UL320_.jpg',
-      title: 'Marvel Logo Tee',
-      category: 'T-Shirts',
-      price: 899,
-      href: '/product/tshirt-marvel',
-    },
-    {
-      image:'https://m.media-amazon.com/images/I/714xYHmO5dL._AC_UL320_.jpg',
-      title: 'Minimal White Tee',
-      category: 'T-Shirts',
-      price: 699,
-      href: '/product/tshirt-white',
-    },
-    {
-      image:'https://m.media-amazon.com/images/I/61sFLnpPerL._AC_UL320_.jpg',
-      title: 'Anime Print Oversized Tee',
-      category: 'T-Shirts',
-      price: 999,
-      href: '/product/tshirt-anime',
-    },
-    {
-      image:'https://m.media-amazon.com/images/I/61Iq5e-dSRL._AC_UL320_.jpg',
-      title: 'Classic Navy T-Shirt',
-      category: 'T-Shirts',
-      price: 749,
-      href: '/product/tshirt-navy',
-    },
-    {
-      image:'https://m.media-amazon.com/images/I/61vvYXrifiL._AC_UL320_.jpg',
-      title: 'Slogan Printed Tee',
-      category: 'T-Shirts',
-      price: 899,
-      href: '/product/tshirt-slogan',
-    },
-    
-    {
-      image:'https://m.media-amazon.com/images/I/619oydTctPL._AC_UL320_.jpg',
-      title: 'Minimal White Tee',
-      category: 'T-Shirts',
-      price: 699,
-      href: '/product/tshirt-white',
-    },
-   
-    
-  ];
+const products = [
+  {
+    image: 'https://m.media-amazon.com/images/I/61CGqRScDaL._AC_UL320_.jpg',
+    caption: 'Black Shirt',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61Oqvx88hhL._AC_UL320_.jpg',
+    caption: 'Marvel Tee',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/714xYHmO5dL._AC_UL320_.jpg',
+    caption: 'Minimal White',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61sFLnpPerL._AC_UL320_.jpg',
+    caption: 'Anime Oversize',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61Iq5e-dSRL._AC_UL320_.jpg',
+    caption: 'Navy Fit',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61vvYXrifiL._AC_UL320_.jpg',
+    caption: 'Slogan Shirt',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/619oydTctPL._AC_UL320_.jpg',
+    caption: 'Casual Tee',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/619oydTctPL._AC_UL320_.jpg',
+    caption: 'Repeat Casual',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61Iq5e-dSRL._AC_UL320_.jpg',
+    caption: 'Navy Fit 2',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61vvYXrifiL._AC_UL320_.jpg',
+    caption: 'Slogan 2',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61Iq5e-dSRL._AC_UL320_.jpg',
+    caption: 'Navy Fit 3',
+  },
+  {
+    image: 'https://m.media-amazon.com/images/I/61vvYXrifiL._AC_UL320_.jpg',
+    caption: 'Slogan 3',
+  },
+];
+
 const Productlist = () => {
   return (
-   <div className='App' style={{margin:'20px 40px'}}>
-   
-     <div className="products-grid">
-      
-      {tshirtProducts.map((product, index) => (
-        <ProductCard key={index} {...product} />
-      ))}
+    <div className="App" style={{ margin: '20px 40px' }}>
+      <h1 style={{ textAlign: 'center' }}>Categories</h1>
+      <div className="uniform-grid">
+        {products.map((product, index) => (
+          <div className="grid-items" key={index}>
+            <img
+              src={product.image}
+              alt={`product-${index + 1}`}
+              className="grid-image"
+            />
+            <h2 className="grid-caption">{product.caption}</h2>
+          </div>
+        ))}
+      </div>
     </div>
-  
-  
-   </div>
   );
 };
 
 export default Productlist;
+
+
