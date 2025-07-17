@@ -9,7 +9,7 @@ const ProductCard = ({ image, title, category, price, href }) => {
   };
 
   return (
-    <a href={href} className="product-card-link">
+    <a href={href} className="product-card-link" target='blank'>
       <div className="product-card">
         <div className="image-container">
           <img src={image} alt={title} style={{objectFit:'fill'}} />
