@@ -83,6 +83,9 @@ height: 30px;
 .menu-web{
   display: none;
 }
+.sb{
+  display: none;
+}
 
 
 @media screen and (max-width: 880px) {
@@ -110,6 +113,32 @@ height: 30px;
   }
 }
 @media screen and (max-width: 530px) {
+  .search-input {
+  position: absolute;
+  top: 4.38rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%; /* optional, for better layout */
+}
+
+  .sb{
+   display: inline;
+  }
+   .login span {
+    display: none;
+  }
+  .cart span{
+    display: none;
+  }
+  
   .menu-web {
     display: none;
   }
