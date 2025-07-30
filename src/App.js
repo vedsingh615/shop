@@ -1,22 +1,22 @@
 import './App.css';
 import React from 'react';
 import Hero from './components/hero';
-import Navbar from './components/navbar';
+import Navbar from './components/layout/navbar';
 import NavIcon from './components/navIcon';
-import Login from './components/Login';
-import Register from './components/Register';
+import Login from './components/form/Login';
+import Register from './components/form/Register';
 import Productlist from './components/Productlist';
-import Tshirt from './components/Tshirt';
-import Caps from './components/Caps';
-import Jackets from './components/Jackets';
-import Cargos from './components/Cargos';
-import Shoes from './components/Shoes';
-import Shirts from './components/Shirts';
-import Bagpacks from './components/Bagpacks';
-import Jeans from './components/Jeans'; 
-import Perfumes from './components/Perfumes';
-import Watches from './components/Watches';
-import Footer from './components/Footer';
+import Tshirt from './components/pages/Tshirt';
+import Caps from './components/pages/Caps';
+import Jackets from './components/pages/Jackets';
+import Cargos from './components/pages/Cargos';
+import Shoes from './components/pages/Shoes';
+import Shirts from './components/pages/Shirts';
+import Bagpacks from './components/pages/Bagpacks';
+import Jeans from './components/pages/Jeans'; 
+import Perfumes from './components/pages/Perfumes';
+import Watches from './components/pages/Watches';
+import Footer from './components/layout/Footer';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -24,6 +24,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const App = () => {
 
 const router = createBrowserRouter([
+  
+
+
   { path: '/', element: <>   <Navbar />  <NavIcon/><Hero /> <Productlist/> <Footer /></>},
   {path: '/Login', element: <>  <Navbar /> <Login /> <Footer /></>},
   {path: '/Register', element:<>  <Navbar />  <Register /> <Footer /></>},
@@ -42,9 +45,7 @@ const router = createBrowserRouter([
 
   return (
     <div>
-  
      <RouterProvider router={router}/>
-     
     </div>
   )
 }

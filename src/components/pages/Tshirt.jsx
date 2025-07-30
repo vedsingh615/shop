@@ -1,75 +1,76 @@
 import React from 'react';
-import ProductCard from './ProductCard';
+import ProductCard from '../ProductCard'; 
 
-const Jeans = () => {
+const Tshirts = () => {
  
-  const jeansProducts = [
+
+  const tshirtProducts = [
     {
-    image:'https://m.media-amazon.com/images/I/61kAmfsmliL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/61CGqRScDaL._AC_UL320_.jpg',
       title: 'Black Graphic Tee',
       category: 'T-Shirts',
       price: 799,
       href: '/product/tshirt-black',
     },
     {
-    image:'https://m.media-amazon.com/images/I/61SOJ5hoduL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/61Oqvx88hhL._AC_UL320_.jpg',
       title: 'Marvel Logo Tee',
       category: 'T-Shirts',
       price: 899,
       href: '/product/tshirt-marvel',
     },
-    
     {
-    image:'https://m.media-amazon.com/images/I/51-RX2zyQDL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/714xYHmO5dL._AC_UL320_.jpg',
       title: 'Minimal White Tee',
       category: 'T-Shirts',
       price: 699,
       href: '/product/tshirt-white',
     },
     {
-    image:'https://m.media-amazon.com/images/I/61+uoXBMn6L._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/61sFLnpPerL._AC_UL320_.jpg',
       title: 'Anime Print Oversized Tee',
       category: 'T-Shirts',
       price: 999,
       href: '/product/tshirt-anime',
     },
     {
-    image:'https://m.media-amazon.com/images/I/61EITRMkVTL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/61Iq5e-dSRL._AC_UL320_.jpg',
       title: 'Classic Navy T-Shirt',
       category: 'T-Shirts',
       price: 749,
       href: '/product/tshirt-navy',
     },
     {
-    image:'https://m.media-amazon.com/images/I/61xf9zQ9IZL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/61vvYXrifiL._AC_UL320_.jpg',
       title: 'Slogan Printed Tee',
       category: 'T-Shirts',
       price: 899,
       href: '/product/tshirt-slogan',
     },
+    
     {
-    image:'https://m.media-amazon.com/images/I/61PIAyOPNaL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/619oydTctPL._AC_UL320_.jpg',
       title: 'Minimal White Tee',
       category: 'T-Shirts',
       price: 699,
       href: '/product/tshirt-white',
     },
     {
-    image:'https://m.media-amazon.com/images/I/61Ne8s64-VL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/614XpiTNZoL._AC_UL320_.jpg',
       title: 'Anime Print Oversized Tee',
       category: 'T-Shirts',
       price: 999,
       href: '/product/tshirt-anime',
     },
     {
-    image:'https://m.media-amazon.com/images/I/612M5IVuRsL._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/71hkpCjS9AL._AC_UL320_.jpg',
       title: 'Classic Navy T-Shirt',
       category: 'T-Shirts',
       price: 749,
       href: '/product/tshirt-navy',
     },
     {
-    image:'https://m.media-amazon.com/images/I/61TkgKTD61L._AC_UL320_.jpg',
+      image:'https://m.media-amazon.com/images/I/61LmtI9XIOL._AC_UL320_.jpg',
       title: 'Slogan Printed Tee',
       category: 'T-Shirts',
       price: 899,
@@ -79,11 +80,11 @@ const Jeans = () => {
 
   return (
     <div className="products-grid">
-      {jeansProducts.map((product, index) => (
+      {tshirtProducts.map((product, index) => (
         <ProductCard key={index} {...product} />
       ))}
     </div>
   );
 };
 
-export default Jeans;
+export default Tshirts;
