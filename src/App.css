@@ -9,8 +9,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px ;
-  background-color: #ffffff; /* or your preferred background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fb5c91 ;
+  box-shadow: 0 2px 4px rgba(0, 0 , 0, 0.1);
 }
 
 .logo img {
@@ -854,28 +854,58 @@ form {
   }
 }
 
-.grid-items {
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+
+.clothes-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.grid-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
-}
-
-.grid-caption {
-  margin-top: 8px;
-  font-size: 1rem;
+.title {
   text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: white;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 500;
   color: #333;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 15px;
+  color: #007b5e;
+  font-weight: 600;
 }
