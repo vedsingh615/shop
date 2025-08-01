@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 const AllClothes = () => {
 
-const API = 'https://dummyjson.com/products?limit=100';
+const API = 'https://dummyjson.com/products?limit=150';
 
 const [All , setAll] = useState([]);
 
@@ -31,7 +31,6 @@ useEffect(()=>{
         <img src={curElem.thumbnail} alt={curElem.title} className="product-image" />
         <div className="product-info">
           <h2 className="product-title">{curElem.title}</h2>
-          <p className="product-description">{curElem.description}</p>
           <div className="product-meta">
             <span className="product-price">${curElem.price}</span>
             <span className="product-category">{curElem.category}</span>
