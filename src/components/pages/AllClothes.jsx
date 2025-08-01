@@ -1,10 +1,11 @@
 import React from 'react'
 import axios from 'axios'
+import { handleAddToCart } from '../form/Carst'; 
 import { useState, useEffect } from 'react'
 
 const AllClothes = () => {
 
-const API = 'https://dummyjson.com/products?limit=150';
+const API = 'https://dummyjson.com/products?limit=100';
 
 const [All , setAll] = useState([]);
 
@@ -23,25 +24,22 @@ useEffect(()=>{
 },[]);
 
   return (
-    
- <div className="product-wrapper">
-  <ul className="product-grid">
-    {All.map((curElem) => (
-      <li key={curElem.id} className="product-card">
-        <img src={curElem.thumbnail} alt={curElem.title} className="product-image" />
-        <div className="product-info">
-          <h2 className="product-title">{curElem.title}</h2>
-          <div className="product-meta">
-            <span className="product-price">${curElem.price}</span>
-            <span className="product-category">{curElem.category}</span>
-          </div>
+    <>
+    <h1 style={{ textAlign: 'center', margin: '30px 0' }}>All Products</h1>
+  <div className="product-container">
+      {All.map(product => (
+        <div className="product-card" key={product.id}>
+          <img src={product.thumbnail} alt={product.title} />
+          <h3>{product.title}</h3>
+          <p className="category">{product.category}</p>
+          <p className="desc">{product.description.slice(0, 60)}...</p>
+          <p className="rating">⭐ {product.rating}</p>
+          <button className='cartbtn' onClick={() => handleAddToCart(product)}>Add to Cart</button>
         </div>
-      </li>
-    ))}
-  </ul>
-</div>
+      ))}
+    </div>
 
-
+</>
 
 
   )
