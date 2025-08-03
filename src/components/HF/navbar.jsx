@@ -86,32 +86,14 @@ const Navbar = ({ setSearchTerm }) => {
               <details>
                 <summary>All Accessories</summary>
                 <ul>
-                  <li><Link to="/shoes">Shoes</Link></li>
-                  <li><Link to="/bagpacks">Bagpacks</Link></li>
-                  <li><Link to="/perfumes">Perfumes</Link></li>
-                  <li><Link to="/caps">Caps</Link></li>
-                  <li><Link to="/watches">Watches</Link></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/bagpacks">Example</Link></li>
+                  <li><Link to="/perfumes">Example</Link></li>
+                  <li><Link to="/caps">Example</Link></li>
+                  <li><Link to="/watches">Example</Link></li>
                 </ul>
               </details>
-            </li>
-            <li>
-              <details>
-                <summary>Top Wear</summary>
-                <ul>
-                  <li><Link to="/tshirts">T-Shirts</Link></li>
-                  <li><Link to="/shirts">Shirts</Link></li>
-                  <li><Link to="/jackets">Hoodies & Jackets</Link></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Bottom Wear</summary>
-                <ul>
-                  <li><Link to="/cargos">Cargos</Link></li>
-                  <li><Link to="/jeans">Jeans</Link></li>
-                </ul>
-              </details>
+            
             </li>
           </ul>
         </nav>
