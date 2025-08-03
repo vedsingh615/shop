@@ -93,7 +93,7 @@ const Navbar = ({ setSearchTerm }) => {
                   <li><Link to="/">Example</Link></li>
                 </ul>
               </details>
-            
+
             </li>
           </ul>
         </nav>
