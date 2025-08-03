@@ -87,10 +87,10 @@ const Navbar = ({ setSearchTerm }) => {
                 <summary>All Accessories</summary>
                 <ul>
                   <li><Link to="/">Home</Link></li>
-                  <li><Link to="/bagpacks">Example</Link></li>
-                  <li><Link to="/perfumes">Example</Link></li>
-                  <li><Link to="/caps">Example</Link></li>
-                  <li><Link to="/watches">Example</Link></li>
+                  <li><Link to="/">Example</Link></li>
+                  <li><Link to="/">Example</Link></li>
+                  <li><Link to="/">Example</Link></li>
+                  <li><Link to="/">Example</Link></li>
                 </ul>
               </details>
             
